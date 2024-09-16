@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "commonjs",
-    "outDir": "./build",
+    "outDir": "../../package/build",
     "resolveJsonModule": true
   },
   "include": ["./src"],

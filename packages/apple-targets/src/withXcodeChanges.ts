@@ -72,6 +72,7 @@ export const withXcodeChanges: ConfigPlugin<XcodeSettings> = (
 ) => {
   return withXcodeProjectBeta(config, async (config) => {
     // NOTE: important to await here, so that withMods "wait" for another one to finish first
+    // @ts-expect-error
     await applyXcodeChanges(config, config.modResults, props);
     return config;
   });
